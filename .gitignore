@@ -1,0 +1,46 @@
+# Virtual Environment
+
+.venv/
+venv/
+
+# Python cache
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# Mac system files
+
+.DS_Store
+
+# VS Code
+
+.vscode/
+
+# Environment variables
+
+.env
+
+# Logs
+
+*.log
+
+# Build / dist
+
+build/
+dist/
+*.egg-info/
+
+# Jupyter (if you ever use it)
+
+.ipynb_checkpoints/
+
+# Testing
+
+.pytest_cache/
+
+# Coverage
+
+.coverage
+htmlcov/
