@@ -63,12 +63,10 @@ def text_classifier_with_torch(training_data: list[tuple[str, int]], vocabulary:
             # Encode each sentence
             # encoded_text: np.ndarray = encode_text(sentence, vocabulary)
             encoded_text = torch.tensor(encode_text(sentence, vocabulary), dtype=torch.float32)
-            print("Encoded text: ", encoded_text)
             
             # Calculate first prediction
             # prediction: float = get_sigmoid(np.dot(encoded_text, weights))
             prediction = torch.sigmoid(model(encoded_text))
-            print("Prediction: ", prediction)
             
             # Calculate loss
             # loss: float = get_loss(prediction, truth)
